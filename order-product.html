@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
    <div class="visually-hidden">
       <svg>
          <symbol id="logo" viewBox="0 0 44 44" fill="none">
@@ -92,92 +91,104 @@
    </header>
 
    <main class="main">
-
+      <h1 class="main__title visually-hidden">Заказ продуктов</h1>
       <section class="order">
-         <form class="order__form" action="" method="get">
-            <fieldset class="order__choose-product choose-product">
-               <legend class="choose-product__title">Выберите продукты</legend>
-               <ul class="choose-product__list">
-                  <li class="choose-product__item">Филе бедра цыпленка <input type="checkbox"></li>
-                  <li class="choose-product__item">Филе бедра гуся <input type="checkbox"></li>
-                  <li class="choose-product__item">Мякоть бедра говяжья <input type="checkbox"></li>
-                  <li class="choose-product__item">Грудка цыпленка на кости <input type="checkbox"></li>
-                  <li class="choose-product__item">Голень цыпленка <input type="checkbox"></li>
+         <h2 class="order__title visually-hidden">Продукты</h2>
+         <form class="order__form form" action="">
+            <fieldset class="form__product-choose">
+               <legend>Выберите продукты</legend>
+               <ul class="form__list">
+                  <li class="form__item">
+                     <span class="form__name">Филе бедра цыпленка</span>
+                     <input type="checkbox" name="" id="" checked>
+                  </li>
+                  <li class="form__item">
+                     <span class="form__name">Филе бедра гуся</span>
+                     <input type="checkbox" name="" id="" checked>
+                  </li>
+                  <li class="form__item">
+                     <span class="form__name">Мякоть бедра говяжья</span>
+                     <input type="checkbox" name="" id="" checked>
+                  </li>
+                  <li class="form__item">
+                     <span class="form__name">Грудка цыпленка на кости</span>
+                     <input type="checkbox" name="" id="">
+                  </li>
+                  <li class="form__item">
+                     <span class="form__name">Голень цыпленка</span>
+                     <input type="checkbox" name="" id="">
+                  </li>
                </ul>
+            </fieldset>
+            
+            <fieldset class="form__product-order">
+               <legend>Сделать заказ</legend>
+               <input class="form__input" type="text" placeholder="Выберите адрес доставки">
+               <p class="form__description">Цена</p>
+               <b class="form__cost">1 200 руб.</b>
+               <button type="submit">Купить</button>
             </fieldset>
          </form>
 
-         <form class="order__form" action="" method="get">
-            <fieldset class="order__book-product book-product">
-               <legend class="book-product__title">Сделать заказ</legend>
-               <input class="book-product__adress" type="text" placeholder="Введите адрес доставки">
-               <p class="book-product__subtitle">Цена</p>
-               <b class="book-product__cost">1 200 руб.</b>
-            </fieldset>
-            <button type="submit">Купить</button>
-         </form>
-      </section>
-
-      <section class="products">
-         <ul class="products__list">
-            <li class="products__item">
-               <img class="products__image" width="248" src="./img/first-product.png" alt="">
-               <h3 class="products__title">Филе бедра цыпленка</h3>
-               <ul class="products__sub-list sub-list">
-                  <li class="sub-list__item">Описание
-                     <p class="sub-list__description">Филе бедра без кожи и кости. Птица содержится в свободных птичниках,
-                        выращивается на натуральных зерновых кормах, что влияет положительно на вкус мяса. Филейная часть
-                        бедра обладает насыщенным вкусом и мясным ароматом.</p>
-                  </li>
-                  <li class="sub-list__item">Характеристики
-                     <div class="sub-list__characteristics visually-hidden">
-                        <p><b>Масса:</b><span>0,7 кг. (595-805 г.).</span></p>
-                        <p><b>Срок годности:</b><span>6 суток</span></p>
-                        <p><b>Порода:</b><span>КОББ 500.</span></p>
-                        <p><b>Место происхождения:</b><span> Тверская область</span></p>
-                     </div>
-                  </li>
-                  <li class="sub-list__item">Свойства
-                     <div class="sub-list__properties">
-                        <b>Энергетическая ценность:</b><span>135 ккал./565 кДж.</span>
-                        <b>Пищевая ценность:</b><span>белки - 13,8 г., жиры - 8,7 г., углеводы - 0 г.; на 100 г.</span>
-                     </div>
-                  </li>
-               </ul>
-               <b class="products__cost">400 руб. / 700 гр.</b>
+         <ul class="order__list">
+            <li class="order__item">
+               <img src="./img/first-product.png" alt="" width="248">
+               <div class="characteristics">
+                  <h3 class="characteristics__title">Филе бедра цыпленка</h3>
+                  <ul class="characteristics__list">
+                     <li class="characteristics__item">Описание</li>
+                     <li class="characteristics__item">Характеристики</li>
+                     <li class="characteristics__item">Свойства</li>
+                  </ul>
+                  <p class="characteristics__description">
+                     Филе бедра без кожи и кости. Птица содержится в свободных птичниках, выращивается на натуральных зерновых кормах, что влияет положительно на вкус мяса. Филейная часть бедра обладает насыщенным вкусом и мясным ароматом.
+                  </p>
+                  <b class="characteristics__price">400 руб. / 700 гр.</b>
+               </div>
             </li>
-            <li class="products__item">
-               <img class="products__image" width="248" src="./img/second-product.png" alt="">
-               <h3 class="products__title">Филе бедра гуся</h3>
-               <ul class="products__sub-list sub-list">
-                  <li class="sub-list__item">Описание</li>
-                  <li class="sub-list__item">Характеристики</li>
-                  <li class="sub-list__item">Свойства</li>
-               </ul>
-               <p class="products__description">Филе бедра гуся - это тонко нарезанный продукт, который понравится всем
-                  любителям сырокопченых продуктов. Необычный вкус, аппетитный аромат и тонкое послевкусия отличает
-                  сырокопченого гуся от других подобных продуктов.</p>
-               <b class="products__cost">400 руб. / 700 гр.</b>
+            <li class="order__item">
+               <img src="./img/second-product.png" alt="" width="248">
+               <div class="characteristics">
+                  <h3 class="characteristics__title">Филе бедра гуся</h3>
+                  <ul class="characteristics__list">
+                     <li class="characteristics__item">Орисание</li>
+                     <li class="characteristics__item">Характеристики</li>
+                     <li class="characteristics__item">Свойства</li>
+                  </ul>
+                  <p class="characteristics__description">
+                     Филе бедра гуся - это тонко нарезанный продукт, который понравится всем любителям сырокопченых продуктов. Необычный вкус, аппетитный аромат и тонкое послевкусия отличает сырокопченого гуся от других подобных продуктов.
+                  </p>
+                  <b class="characteristics__price">400 руб. / 700 гр.</b>
+               </div>
             </li>
-            <li class="products__item">
-               <img class="products__image" width="248" src="./img/second-product.png" alt="">
-               <h3 class="products__title">Филе бедра говяжья</h3>
-               <ul class="products__sub-list sub-list">
-                  <li class="sub-list__item">Описание
-                     <p class="products__description">Филе бедра без кожи и кости. Птица содержится в свободных птичниках,
-                        выращивается на натуральных зерновых кормах, что влияет положительно на вкус мяса. Филейная часть
-                        бедра обладает насыщенным вкусом и мясным ароматом.</p>
-                     <b class="products__cost">400 руб. / 700 гр.</b>
-                  </li>
-                  <li class="sub-list__item">Характеристики</li>
-                  <li class="sub-list__item">Свойства</li>
-               </ul>
+            <li class="order__item">
+               <img src="./img/second-product.png" alt="" width="248">
+               <div class="characteristics">
+                  <h3 class="characteristics__title">Мякоть бедра говяжья</h3>
+                  <ul class="characteristics__list">
+                     <li class="characteristics__item">Орисание</li>
+                     <li class="characteristics__item">Характеристики</li>
+                     <li class="characteristics__item">Свойства</li>
+                  </ul>
+                  <p class="characteristics__description">
+                     Филе бедра без кожи и кости. Птица содержится в свободных птичниках, выращивается на натуральных зерновых кормах, что влияет положительно на вкус мяса. Филейная часть бедра обладает насыщенным вкусом и мясным ароматом.
+                  </p>
+                  <b class="characteristics__price">400 руб. / 700 гр.</b>
+               </div>
             </li>
-
          </ul>
       </section>
    </main>
 
+   <footer class="footer">
+      <a class="footer__logo" href="/">
+         <svg width="44" height="44">
+            <use xlink:href="#logo"></use>
+         </svg>
+         <span>Фермерские продукты</span>
+      </a>
+      <span class="footer__copyright">Создано 2021</span>
+   </footer>
 </body>
 
 </html>

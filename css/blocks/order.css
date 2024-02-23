@@ -1,0 +1,70 @@
+.order {
+   padding: 40px 90px 40px 90px;
+   background: #f6f6f6;
+}
+
+.order__form {
+   width: 353px;
+   background: #ffffff;
+   padding: 24px 20px 26px 20px;
+   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04), 0 10px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.form {}
+
+.form__product-choose {
+   border: none;
+   margin-bottom: 18px;
+}
+
+.form__product-choose>legend {
+   margin-bottom: 11px;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 150%;
+   color: #333;
+}
+
+.form__list {
+   list-style: none;
+}
+
+.form__item {
+   margin-bottom: 14px;
+   display: flex;
+}
+
+.form__item>input {
+   width: 24px;
+   height: 24px;
+   background: #FC9B27;
+}
+
+.form__name {
+   flex-grow: 1;
+   position: relative;
+}
+
+.form__product-order {}
+
+.form__input {}
+
+.form__description {}
+
+.form__cost {}
+
+.order__list {}
+
+.order__item {}
+
+.characteristics {}
+
+.characteristics__title {}
+
+.characteristics__list {}
+
+.characteristics__item {}
+
+.characteristics__description {}
+
+.characteristics__price {}

@@ -1,8 +1,15 @@
-
+/*Blocks*/
+@import url('./blocks/header.css');
+@import url('./blocks/about.css');
+@import url('./blocks/advantages.css');
+@import url('./blocks/footer.css');
+@import url('./blocks/order.css');
+@import url('./blocks/order-list.css');
 
 /*Global*/
 
 @import url('./globals/font.css');
-/* @import url('./globals/global.css'); */
+@import url('./globals/global.css');
 @import url('./globals/normalize.css');
 @import url('./globals/variable.css');
+

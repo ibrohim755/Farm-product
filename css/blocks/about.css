@@ -1,0 +1,41 @@
+.main {
+   width: 1280px;
+   margin: 0 auto;
+}
+
+.about {
+   background: #d8ecfe;
+   padding: 0 90px 0 90px;
+   position: relative;
+}
+
+.about::before{
+   content: url('../../img/Frame.png');
+   position: absolute;
+   top: 37px;
+   left: 830px;
+   z-index: 5;
+}
+.about::after{
+   content: url('../../img/Ellipse\ 8.png');
+   position: absolute;
+   top: 76px;
+   left: 744px;
+}
+
+
+.about__title {
+   padding: 183px 0 24px 0;
+   font-weight: 700;
+   font-size: 44px;
+   line-height: 115%;
+   color: #333;
+}
+
+.about__description {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 150%;
+   color: #333;
+   padding-bottom: 183px;
+}

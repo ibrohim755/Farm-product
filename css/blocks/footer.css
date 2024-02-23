@@ -1,0 +1,30 @@
+.footer {
+   width: 1280px;
+   height: 80px;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   padding: 0 90px 0 90px;
+   background: #ffffff;
+}
+
+.footer__logo {
+   display: flex;
+   flex-grow: 1;
+   align-items: center;
+}
+
+.footer__logo>span {
+   margin-left: 24px;
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 115%;
+   color: #333;
+}
+
+.footer__copyright {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 150%;
+   color: #333;
+}
